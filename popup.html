@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Twitch Popup</title>
+    <style>
+      * {
+        font-family: Arial;
+      }
+      .offline {
+        background-color: #777777;
+      }
+      .live {
+        background-color: #4B0082;
+      }
+      li {
+        color: WHITE;
+        list-style-type: none;
+      }
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+        background-color: BLACK;
+      }
+      a {
+        text-decoration: none;
+        width: 357px;
+        height: 18px;
+        visibility: visible;
+        display: block;
+      }
+      p {
+        color: white;
+      }
+	  #loading {
+		display: none;
+	  }
+
+    </style>
+
+
+    <li> Viewing channels for:</li>
+    <input id="name" type="text" name = "username" value = "Username here"> 
+
+    <button id="submit" type = "button">Load</button>
+	<p id = "loading" > Loading... </p>
+
+    <script src = "jquery.min.js"></script>
+    <script src="channels.js"></script>
+
+  </head>
+  <body>
+       <!-- channels.js adds paragraph elements here -->
+  </body>
+</html>
+
